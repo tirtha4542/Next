@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Next Website</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Protest+Guerrilla&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js"></script>
+</head>
+
+<body>
+  <!--Navbar section-->
+  <nav class="Navbar">
+    <div class="Navbar__continer">
+      <a href="/" id="Navbar__logo">Next</a>
+      <div class="navbar__toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+
+      </div>
+      <ul class="Navbar__menu">
+
+        <li class="Navbar__item">
+          <a href="" class="Navbar__links">
+            Home
+          </a>
+        </li>
+        <li class="Navbar__item">
+          <a href="" class="Navbar__links">Tech</a>
+        </li>
+        <li class="Navbar__item">
+          <a href="" class="Navbar__links">
+            Products
+          </a>
+        </li>
+        <li class="Navbar__btn">
+          <a href="index.html" class="Button">
+            Create Account
+          </a>
+        </li>
+      </ul>
+
+    </div>
+  </nav>
+  <!--Hero section-->
+  <div class="main">
+    <div class="main__continer">
+      <div class="main__content">
+        <h1>Next Generation</h1>
+        <h2>Technology</h2>
+        <p>See what makes us different</p>
+        <button class="main__btn"><a href="/">Get Started</a></button>
+      </div>
+      <div class="main__img-continer">
+        <img src="images/pig1.svg" alt="" id="main__img">
+      </div>
+    </div>
+  </div>
+  <!--sarvices-->
+  <div class="services">
+    <h1>See what the hype is about</h1>
+    <div class="services__continer">
+      <div class="services__card">
+        <h2>Experience bliss</h2>
+        <p>AI powered Technology</p>
+        <button>Get Started</button>
+      </div>
+      <div class="services__card">
+        <h2>Are you Ready?</h2>
+        <p>Take the leap</p>
+        <button>Get Started</button>
+      </div>
+    </div>
+  </div>
+  <div class="footer__continer">
+    <div class="footer__links">
+      <div class="footer__links--wrapper">
+        <div class="footer__links--items">
+          <h2>About us</h2>
+          <a href="/sign__up">How it works</a>
+          <a href="/">Testimonials</a>
+          <a href="/">craeer</a>
+          <a href="/">Invesments</a>
+          <a href="/">Term of service</a>
+        </div>
+        <div class="footer__links--items">
+          <h2>Contace us</h2>
+          <a href="/">Contace</a>
+          <a href="/">Support</a>
+          <a href="/">Destination</a>
+          <a href="/">Sponsorships</a>
+          <a href="/">Term of service</a>
+        </div>
+      </div>
+      <div class="footer__links--wrapper">
+        <div class="footer__links--items">
+          <h2>Videos</h2>
+          <a href="/">Submit Video</a>
+          <a href="/">Ambassadors</a>
+          <a href="/">Agency</a>
+        </div>
+        <div class="footer__links--items">
+          <h2>Social Media</h2>
+          <a href="/">Instagram</a>
+          <a href="/">twitter</a>
+          <a href="/">Facebook</a>
+          <a href="/">Youtube</a>
+
+        </div>
+      </div>
+    </div>
+    <div class="social__media">
+      <div class="social__media--wrap">
+        <a href="/" id="footer__logo"><i class="fas faa"></i>Next</a>
+
+      </div>
+      <p class="websit__right">Next 2022.All rights reserved</p>
+      <div class="social__icons">
+        <a href="/" class="social__icons--links" target="_blank">
+          <i class="fab fa-facebook"></i>
+
+        </a>
+        <a href="/" class="social__icons--links" target="_blank">
+          <i class="fab fa-Instagram"></i>
+
+        </a>
+        <a href="/" class="social__icons--links" target="_blank">
+          <i class="fab fa-twitter"></i>
+
+        </a>
+        <a href="/" class="social__icons--links" target="_blank">
+          <i class="fab fa-YouTube"></i>
+
+        </a>
+      </div>
+
+
+    </div>
+
+    <div id="signin-modal" class="modal">
+      <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <h2>Sign In</h2>
+        <form>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required>
+          <button type="submit" class="Button">Sign In</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+
+</html>

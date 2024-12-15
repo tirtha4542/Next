@@ -1,0 +1,23 @@
+<!-- admin.html -->
+
+<h2>Admin Panel</h2>
+<button id="load-users">Load Users</button>
+<div id="user-list"></div>
+
+<script>
+  document.getElementById('load-users').addEventListener('click', () => {
+    const token = localStorage.getItem('token');
+    axios.get('/admin', { headers: { 'Authorization': token } })
+      .then(response => {
+        const users = response.data.users;
+        const userList = document.getElementById('user-list');
+        userList.innerHTML = '';
+        users.forEach(user => {
+          userList.innerHTML += `<p>${user.email}</p>`;
+        });
+      })
+      .catch(error => {
+        alert(error.response.data.error);
+      });
+  });
+</script>
